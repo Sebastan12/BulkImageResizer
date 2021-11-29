@@ -26,6 +26,7 @@ def starting_point():
         background.paste(
             foreground, (int((background.size[0] - foreground.size[0]) / 2), int((background.size[1] - foreground.size[1]) / 2))
         )
+        #jpg can only output RGB (no aplha channel)
         background = background.convert("RGB")
         background.save(exprtfoldername + "/" + currentfile)
 
