@@ -28,7 +28,7 @@ def starting_point():
         )
         #jpg can only output RGB (no aplha channel)
         background = background.convert("RGB")
-        background.save(exprtfoldername + "/" + currentfile)
+        background.save(exprtfoldername + "/" + currentfile, format='JPEG', subsampling=0, quality=100)
 
 
 if __name__ == '__main__':
