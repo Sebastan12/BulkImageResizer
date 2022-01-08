@@ -53,4 +53,5 @@ wheels/
 #custom for this project
 import/
 export/
+main.spec
 
